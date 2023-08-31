@@ -62,7 +62,7 @@ public class RedesController {
                         ip.append("Adaptador: ").append(line);
                         ip.append(" IPv4: ");
                     } else if (line.contains("inet")) {
-                        String[] IPv4 = line.split("");
+                        String[] IPv4 = line.split(" ");
                         ip.append(IPv4[1]);
                         ip.append("\n");
                     }
